@@ -1,0 +1,25 @@
+<div class="loginBox-content">
+    <div class="login-title">
+        <span>登录</span>
+    </div>
+    <div class="login-number">
+        <span>输入账号</span>
+        <input nz-input placeholder="large size" nzSize="large" />
+    </div>
+    <div class="login-password">
+        <span>输入密码</span>
+        <input nz-input placeholder="large size" nzSize="large" />
+        <div>
+            <nz-switch nzSize="small"></nz-switch>
+            <span>记住密码</span>
+        </div>
+    </div>
+    <div class="login-button">
+        <button nz-button nzBlock nzType="primary" (click)="loadTwo()" [nzLoading]="isLoadingTwo">
+            <i nz-icon nzType="poweroff"></i>登录
+        </button>
+    </div>
+    <div class="reset-password">
+        <span>重置你的密码</span>
+    </div>
+</div>
